@@ -5,3 +5,4 @@ path = r'C:\Ddisk\_Projects\PythonProjects\pythonProject\input'  # 将要进行�
 密码 = r'这是密码'  # 可以为空字符串，则不设置密码
 子目录 = True  # 是否遍历子目录
 删除文件 = True  # 是否删除源文件
+压缩等级 = 0  # 0仅存储，9极致压缩，可选013579

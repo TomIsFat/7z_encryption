@@ -33,7 +33,7 @@ def make_command(file, zipfile, pw):
     :return: 单个command
     """
     loc_7z = 路径7z  # 7zip开源压缩工具的可执行文件路径
-    archive_command_str = f'{loc_7z} a "{zipfile}" -p{pw} "{file}"' if pw else f'{loc_7z} a "{zipfile}" "{file}"' # 编辑命令行
+    archive_command_str = f'{loc_7z} a "{zipfile}" -p{pw} -mx{压缩等级} "{file}"' if pw else f'{loc_7z} a "{zipfile}" "{file}"' # 编辑命令行
     return (archive_command_str)
 
 
